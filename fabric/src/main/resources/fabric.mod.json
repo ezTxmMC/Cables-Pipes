@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "cables_and_pipes",
+  "version": "${version}",
+  "name": "Cables & Pipes",
+  "description": "",
+  "authors": [
+    "ezTxmMC"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "MIT",
+  "icon": "assets/cables_and_pipes/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "de.eztxm.cablespipes.fabric.CablesPipesFabric"
+    ],
+    "client": [
+      "de.eztxm.cablespipes.fabric.client.CablesPipesFabricClient"
+    ]
+  },
+  "mixins": [
+    "cables_and_pipes.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
